@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+h1 {
+    font-family: "VT323", monospace;
+}
+
+/* login + sign up page */
+.login-container, .signup-container {
+    padding-top: 3%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-login-btn, #signup-signup-btn {
+    margin-top: 3%;
+}
+
+/* posts page */
+
+.post-container {
+    display: flex;
+    justify-content: center;
+}
+
+.post-card {
+    width: 60%;
+    margin: 3%;        
+}
+
+.post-title, .post-author, .post-content {
+    margin: 2%;
+}
+
+.comment-container {
+    margin-top: 8%;
+}
+
+#submit-comment-btn {
+    margin-top: 4%;
+}
+
