@@ -19,7 +19,7 @@ if (!username || !email || !password) {
         return;
     }
 
-            // Send a POST request to your server with the user data
+            // Send a POST request server with user data
 fetch('/signup', {
     method: 'POST',
     headers: {
@@ -30,7 +30,7 @@ fetch('/signup', {
     .then(response => {
         if (response.ok) {
                     // Redirect to the dashboard or show a success message
-            window.location.href = '/dashboard'; // Change '/dashboard' to your desired route
+            window.location.href = '/dashboard'; 
         } else {
                     // Handle errors
             alert('Sign up failed. Please try again.');
