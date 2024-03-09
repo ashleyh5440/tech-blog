@@ -1,1 +1,29 @@
-<div><h1>Tech Tidbits Blog</h1></div>
+{{#each postss as |post|}}
+
+  <div class="row">
+
+    <div class="container blogBox">
+			<div class="row  justify-content-center headerRow">
+      <div class="col-8">
+        <h2>
+          <a class="postTitle text-uppercase" href="/posts/{{posts.id}}">{{posts.title}}</a>
+        </h2>
+      </div>
+
+      <div class="col-4">
+        <p class="blogCreate text-right">Created by
+          {{posts.user.username}}
+          on
+          {{format_date post.date_created}}
+        </p>
+      </div>
+			</div>
+    <div class="desc">
+      <p class="text-center postDescMain">
+        {{posts.description}}
+      </p>
+    </div>
+    </div>
+
+  </div>
+
